@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>Hola mundo</h1>
+<p th:text="${name} + ' ' + ${lastname}"/>
+<p th:text="${person['lastname']}"/>
+<p th:text="${person['age']}"/>
+<a href="/users">Users</a>
+</body>
+</html>
